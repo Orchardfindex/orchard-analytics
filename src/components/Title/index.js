@@ -60,14 +60,14 @@ export default function Title() {
         <div>
           <DMMIcon id='link' to={prefixNetworkURL}>
             <img
-              width={below1080 ? '110px' : '160px'}
-              src={isDark ? '/logo-dark.svg' : '/logo.svg?version=v'}
+              width={below1080 ? '50px' : '80px'}
+              src={isDark ? '/logo.svg' : '/logo.svg?version=v'}
               alt='logo'
               style={{ marginTop: '2px' }}
             />
           </DMMIcon>
           <Text fontSize='12px' color={theme.subText} textAlign='right' marginTop='-12px'>
-            Analytics
+            Analytics Beta
           </Text>
         </div>
         {below1080 && (

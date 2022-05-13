@@ -85,7 +85,7 @@ function GlobalPage() {
               <TYPE.largeHeader style={{ marginTop: below800 ? '20px' : '0' }}>Summary</TYPE.largeHeader>
               {currentNetworkURL && <Search />}
             </Flex>
-            <GlobalStats />
+            {/* <GlobalStats /> */}
           </AutoColumn>
           <GridRow>
             <Panel style={{ height: '100%', minHeight: '300px' }}>

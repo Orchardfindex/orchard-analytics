@@ -185,8 +185,8 @@ function SideNav() {
 
             <SocialLinks />
             <HeaderText>
-              <Link href='https://kyber.network/' external>
-                Kyber Network
+              <Link href='https://orchardswap-test.netlify.app/' external>
+                Orchard FinDex
               </Link>
             </HeaderText>
             {!below1180 && (

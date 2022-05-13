@@ -122,8 +122,8 @@ function BottomBar() {
           <div>
             <SocialLinks />
             <Text marginTop='12px' fontSize='12px'>
-              <Link href='https://kyber.network/' external>
-                Kyber Network
+              <Link href='https://orchardswap-test.netlify.app/#/' external>
+                Orchard FinDex
               </Link>
             </Text>
           </div>

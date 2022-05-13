@@ -17,7 +17,7 @@ import { Updater as PairDataContextUpdater } from './contexts/PairData'
 import { Updater as PoolDataContextUpdater } from './contexts/PoolData'
 
 const initGoogleAnalytics = () => {
-  ReactGA.initialize('UA-207888714-1')
+  //ReactGA.initialize('UA-207888714-1')
 }
 
 initGoogleAnalytics()

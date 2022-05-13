@@ -49,7 +49,7 @@ export function addNetworkIdQueryString(url, networkInfo) {
     return `${url}&networkId=${networkInfo.chainId}`
   }
 
-  return `${url}?networkId=${networkInfo.chainId}`
+  return `${url}swap-legacy?networkId=${networkInfo.chainId}`
 }
 
 export function getPoolLink(token0Address, networkInfo, token1Address = null, remove = false, poolAddress = null) {
@@ -98,10 +98,10 @@ export function getSwapLink(token0Address, networkInfo, token1Address = null) {
   const nativeTokenSymbol = networkInfo.nativeTokenSymbol
 
   if (!token1Address) {
-    return addNetworkIdQueryString(`${networkInfo.dmmSwapUrl}swap?inputCurrency=${token0Address}`, networkInfo)
+    return addNetworkIdQueryString(`${networkInfo.dmmSwapUrl}swap-legacy?inputCurrency=${token0Address}`, networkInfo)
   } else {
     return addNetworkIdQueryString(
-      `${networkInfo.dmmSwapUrl}swap?inputCurrency=${
+      `${networkInfo.dmmSwapUrl}swap-legacy?inputCurrency=${
         token0Address === networkInfo.wethAddress ? nativeTokenSymbol : token0Address
       }&outputCurrency=${token1Address === networkInfo.wethAddress ? nativeTokenSymbol : token1Address}`,
       networkInfo

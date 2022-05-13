@@ -1,6 +1,8 @@
 import React from 'react'
 import styled, { css, keyframes } from 'styled-components'
 import { useDarkModeManager } from '../../contexts/LocalStorage'
+import CircularProgress from '@material-ui/core/CircularProgress'
+import { Grid } from '@material-ui/core'
 
 const pulse = keyframes`
   0% { transform: scale(1); }
@@ -33,7 +35,7 @@ const AnimatedImg = styled.div`
   }
 `
 
-const LocalLoader = ({ fill, size }) => {
+/* const LocalLoader = ({ fill, size }) => {
   const [isDark] = useDarkModeManager()
   return (
     <Wrapper fill={fill}>
@@ -41,6 +43,15 @@ const LocalLoader = ({ fill, size }) => {
         <img src={isDark ? '/logo-dark.svg' : '/logo.svg?version=v'} alt='loading-icon' />
       </AnimatedImg>
     </Wrapper>
+  )
+} */
+const LocalLoader = ({ fill, size }) => {
+  return (
+    <Grid container spacing={0} direction='column' alignItems='center' justifyContent='center' style={{ minHeight: '100vh' }}>
+      <Grid item xs={3}>
+        <CircularProgress color='secondary' size='5rem' />
+      </Grid>
+    </Grid>
   )
 }
 

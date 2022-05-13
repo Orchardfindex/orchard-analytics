@@ -20,6 +20,12 @@ module.exports = {
     'no-unused-vars': 0,
     'no-extra-boolean-cast': 0,
     'no-inner-declarations': 0,
+    'prettier/prettier': [
+      'error',
+      {
+        endOfLine: 'auto',
+      },
+    ],
   },
   overrides: [
     // typescript

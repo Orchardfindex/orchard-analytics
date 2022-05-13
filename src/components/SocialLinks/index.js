@@ -22,25 +22,19 @@ const SocialLinks = () => {
   const theme = useTheme()
   return (
     <StyledSocialLinks>
-      <Link href='https://t.me/kybernetwork' external>
-        <StyledIcon>
-          <Telegram size={16} color={theme.subText} />
-        </StyledIcon>
-      </Link>
-
-      <Link href='https://twitter.com/kybernetwork' external>
+      <Link href='https://twitter.com/Orchardfindex' external>
         <StyledIcon>
           <TwitterIcon height={16} width={16} color={theme.subText} />
         </StyledIcon>
       </Link>
 
-      <Link href='https://discord.com/invite/NB3vc8J9uv' external>
+      <Link href='https://discord.com/channels/953321210110939199/953321210710720594' external>
         <StyledIcon>
           <DiscordIcon height={16} width={16} color={theme.subText} />
         </StyledIcon>
       </Link>
 
-      <Link href='https://medium.com/@kyberteam' external>
+      <Link href='https://medium.com/@orchardfindex' external>
         <StyledIcon>
           <MediumIcon height={16} width={16} color={theme.subText} />
         </StyledIcon>

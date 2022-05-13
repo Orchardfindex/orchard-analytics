@@ -49,7 +49,7 @@ export function addNetworkIdQueryString(url, networkInfo) {
     return `${url}&networkId=${networkInfo.chainId}`
   }
 
-  return `${url}swap-legacy?networkId=${networkInfo.chainId}`
+  return `${url}?networkId=${networkInfo.chainId}`
 }
 
 export function getPoolLink(token0Address, networkInfo, token1Address = null, remove = false, poolAddress = null) {

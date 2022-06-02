@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Route, Switch, BrowserRouter, Redirect, useParams } from 'react-router-dom'
+import { Route, Switch, BrowserRouter, HashRouter, Redirect, useParams } from 'react-router-dom'
 import styled from 'styled-components'
 import { Text } from 'rebass'
 
@@ -194,7 +194,7 @@ function App() {
   const [savedOpen, setSavedOpen] = useState(false)
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Switch>
         <Route
           exacts
@@ -295,7 +295,7 @@ function App() {
         <Route path='/:network' render={() => <RedirectToHome />} />
         <Route path='*' render={() => <RedirectToHome />} />
       </Switch>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
